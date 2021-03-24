@@ -14,6 +14,7 @@ console.log(sum);
 
 
 //Question 2
+/*
 function sum( obj )
 {
     var sum = 0;
@@ -32,4 +33,16 @@ function sum( obj )
 
 obj.f=summed;
 console.log(obj)
+*/
 
+
+//Question 5
+
+function change() 
+{
+    return new Promise(function(resolve, reject) {
+    setTimeout(resolve, 2000);
+    }).then(function() {
+        console.log("Done");
+    });
+}
