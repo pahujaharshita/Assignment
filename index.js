@@ -37,12 +37,21 @@ console.log(obj)
 
 
 //Question 5
-
+/*
 function change() 
 {
     return new Promise(function(resolve, reject) {
-    setTimeout(resolve, 2000);
+    setTimeout(resolve, 5000);
     }).then(function() {
         console.log("Done");
     });
-}
+}*/
+
+// Question 5: Again Tried
+
+const fun= new Promise(function(resolve, reject)
+{ 
+    setTimeout(()=> resolve("Done"),5000);
+})
+
+fun.then(res => console.log(res));
