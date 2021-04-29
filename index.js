@@ -55,3 +55,10 @@ const fun= new Promise(function(resolve, reject)
 })
 
 fun.then(res => console.log(res));
+
+const fun2= new Promise(function(resolve, reject)
+{ 
+    setTimeout(()=> resolve("Done"),5000);
+})
+
+fun2.then(res => console.log(res));
